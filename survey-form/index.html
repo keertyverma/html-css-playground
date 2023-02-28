@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="text-center" id="title">freeCodeCamp Survey Form</h1>
+        <p class="text-center" id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            class="form-control"
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="3"
+            max="120"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select class="form-control" id="dropdown" name="role" required>
+            <option value="" disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label
+            ><input
+              class="input-radio"
+              type="radio"
+              name="user-recommend"
+              id="definitely"
+              value="definitely"
+              checked
+            />Definitely</label
+          >
+          <label
+            ><input
+              class="input-radio"
+              type="radio"
+              name="user-recommend"
+              id="maybe"
+              value="maybe"
+            />Maybe</label
+          >
+          <label
+            ><input
+              class="input-radio"
+              type="radio"
+              name="user-recommend"
+              id="notsure"
+              value="notsure"
+            />Not sure</label
+          >
+        </div>
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              name="frontend"
+              id="frontend"
+              value="1"
+            />Front-end Projects</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              name="backend"
+              id="backend"
+              value="2"
+            />Back-end Projects</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              name="data-visualization"
+              id="data-visualization"
+              value="3"
+            />Data Visualization</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              name="challenges"
+              id="challenges"
+              value="4"
+            />Challenges</label
+          >
+          <label
+            ><input
+              class="input-checkbox"
+              type="checkbox"
+              name="relational-db"
+              id="relational-db"
+              value="5"
+            />Relational Database</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions ?</p>
+          <textarea
+            class="input-textarea"
+            name="comment"
+            id="comments"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button class="submit-btn" id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

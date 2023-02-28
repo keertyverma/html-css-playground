@@ -1,0 +1,173 @@
+*,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+  color: white;
+}
+
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  position: fixed;
+  z-index: -1;
+  background: #1b1b32;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+form {
+  background-color: rgba(27, 27, 50, 0.8);
+  padding: 4rem 1rem;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    padding: 4rem;
+  }
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 3rem auto 0 auto;
+}
+
+@media screen and (min-width: 300px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+  padding: 0.4rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.4rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.form-control:focus,
+.input-textarea {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.clue {
+  margin-left: 0.4rem;
+  font-size: 1.4rem;
+  color: #e4e4e4;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-right: 1rem;
+  min-height: 2rem;
+  min-width: 2rem;
+}
+
+.input-textarea {
+  width: 100%;
+  padding: 1rem;
+  resize: vertical;
+
+  border: 1px solid #ced4da;
+  border-radius: 0.4rem;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(9, 223, 23, 0.888);
+  color: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#description {
+  font-weight: 200;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+}
