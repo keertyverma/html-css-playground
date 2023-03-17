@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 10rem;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-group {
+  margin: 2rem 0;
+}
+
+.form-group .email {
+  max-width: 250px;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+}
+
+.btn {
+  background-color: rgb(238, 177, 64);
+  max-width: 200px;
+  padding: 0.5rem 1.5rem;
+  white-space: nowrap;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.hero .btn {
+  font-weight: bold;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 3rem;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  background-color: #eee;
+}
+
+#header-img {
+  width: 20%;
+  object-fit: cover;
+}
+
+#nav-bar {
+  font-size: 1.5rem;
+  margin-right: 6rem;
+}
+
+/* Features section */
+#features {
+  margin-top: 3rem;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(244, 98, 45);
+  width: 20vw;
+  height: 125px;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 125px;
+  padding: 0.5rem;
+}
+
+/* How it works section */
+#how_it_works {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+#video {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+/* Pricing */
+.card {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.card-header {
+  background-color: #dfdada;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.card-header h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.card-body .btn {
+  display: block;
+  margin: 2rem auto;
+}
+
+.plan-price {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0.8rem 0;
+}
+
+.plan-description {
+  text-align: center;
+  line-height: 2;
+  margin: 0.8rem 0;
+}
+
+.plan-description ul {
+  list-style-type: none;
+}
+
+#pricing {
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #dfdada;
+  padding: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-link {
+  margin-left: 0;
+  padding: 1.5rem;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  color: #292828;
+  text-align: right;
+}
